@@ -1,0 +1,177 @@
+{
+	"window": {
+		"width": 600,
+		"height": 600,
+		"grid_size": 20,
+		"title": "贪吃蛇"
+	},
+	"game": {
+		"min_speed": 5,
+		"max_speed": 20,
+		"default_speed": 10
+	},
+	"ui": {
+		"fonts": {
+			"default": {
+				"name": "microsoftyahei",
+				"fallback": "arial"
+			},
+			"sizes": {
+				"score": 18,
+				"leaderboard_title": 24,
+				"leaderboard_item": 20,
+				"game_over": 20
+			}
+		},
+		"leaderboard": {
+			"width": 350,
+			"height": 400,
+			"x_offset": 125,
+			"y_offset": 100,
+			"opacity": 230,
+			"spacing": 35,
+			"title_spacing": 40,
+			"item_padding": 20,
+			"background_color": [
+				10,
+				10,
+				15
+			]
+		},
+		"dialog": {
+			"width": 300,
+			"height": 150,
+			"background_color": [
+				10,
+				10,
+				15
+			],
+			"opacity": 230,
+			"text_size": 20,
+			"button_width": 100,
+			"button_height": 40,
+			"button_spacing": 20,
+			"text": "确定要退出游戏吗？",
+			"yes_text": "确定",
+			"no_text": "取消"
+		},
+		"key_help": {
+			"width": 400,
+			"height": 300,
+			"background_color": [
+				10,
+				10,
+				15
+			],
+			"opacity": 230,
+			"text_size": 18,
+			"title_size": 24,
+			"spacing": 30,
+			"title": "按键说明",
+			"items": [
+				"方向键: 控制蛇的移动",
+				"K键: 显示/隐藏排行榜",
+				"1键: 加速",
+				"2键: 减速",
+				"3键: 游戏结束时重新开始",
+				"空格键: 开启/关闭背景音乐",
+				"ESC键: 退出游戏"
+			]
+		}
+	},
+	"colors": {
+		"white": [
+			255,
+			255,
+			255
+		],
+		"red": [
+			255,
+			0,
+			0
+		],
+		"green": [
+			0,
+			255,
+			0
+		],
+		"black": [
+			0,
+			0,
+			0
+		],
+		"dark_green": [
+			0,
+			200,
+			0
+		],
+		"light_green": [
+			0,
+			255,
+			0
+		],
+		"dark_bg": [
+			5,
+			5,
+			8
+		],
+		"grid_color": [
+			15,
+			15,
+			20
+		],
+		"gray": [
+			128,
+			128,
+			128
+		]
+	},
+	"directions": {
+		"up": [
+			0,
+			-1
+		],
+		"down": [
+			0,
+			1
+		],
+		"left": [
+			-1,
+			0
+		],
+		"right": [
+			1,
+			0
+		]
+	},
+	"resources": {
+		"directory": "resources",
+		"db_name": "snake_scores.db"
+	},
+	"audio": {
+		"directory": "sounds",
+		"volume": 0.5,
+		"sounds": {
+			"background": "background.wav",
+			"death": "death.wav",
+			"button": "button.wav",
+			"eat": "eat.wav"
+		},
+		"durations": {
+			"death": 2000
+		}
+	},
+	"quotes": {
+		"file": "quotes.txt",
+		"display_time": 3000,
+		"font_size": 24,
+		"items": [
+			"生命不息，贪吃不止",
+			"贪得无厌者，必将自食其果",
+			"游戏结束，人生尚未结束",
+			"失败是成功之母，重新开始吧",
+			"贪吃蛇的人生，就是不断超越自我",
+			"每一次游戏都是一次成长"
+		]
+	}
+}
