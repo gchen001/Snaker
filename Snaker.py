@@ -9,9 +9,8 @@
 5. 图形化界面
 6. 配置文件支持
 
-作者：[Your Name]
 版本：1.0.0
-日期：2024-01-xx
+日期：2024-12-28
 """
 
 import pygame
@@ -292,7 +291,7 @@ class Snake:
         """
         self.last_direction = self.direction
         
-        # 获���前头部位置
+        # 获取移动前头部位置
         cur = self.get_head_position()
         x, y = self.direction
         # 使用取模运算实现穿墙
@@ -321,7 +320,7 @@ class Snake:
                     surface.blit(resources.snake_body_image, 
                                (p[0] * Config.GRID_SIZE + 2, p[1] * Config.GRID_SIZE + 2))
                 else:
-                    # 如果片加载失败，使用原来的矩形���制
+                    # 如果片加载失败，使用原来的矩形绘制
                     rect = pygame.Rect(
                         p[0] * Config.GRID_SIZE + 2,
                         p[1] * Config.GRID_SIZE + 2,
@@ -434,7 +433,7 @@ def draw_leaderboard(screen, score_db, scroll_position=0):
     visible_surface = pygame.Surface((config['width'], visible_height))
     visible_surface.fill(tuple(config['background_color']))
     
-    # 限���滚动范围
+    # 限制滚动范围
     max_scroll = max(0, content_height - visible_height)
     scroll_position = max(0, min(scroll_position, max_scroll))
     
